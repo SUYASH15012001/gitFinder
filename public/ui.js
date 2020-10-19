@@ -7,6 +7,7 @@ class UI {
     showProfile(user){
         this.clearAlert();
         this.profile.innerHTML = `
+        <h2>User Data</h2>
         <div class="card card-body mb-3">
             <div class="row">
                 <div class="col-md-3">
@@ -18,7 +19,7 @@ class UI {
                     <span class="badge badge-success m-1">Followers: ${user.followers}</span>
                     <span class="badge badge-info m-1">Following: ${user.following}</span>
                     <ul class="list-group">
-                        <li class="list-group-item">
+                        <li class="list-group-item ">
                             Name: ${user.name}
                         </li>
                         <li class="list-group-item">
@@ -56,8 +57,8 @@ class UI {
                     </div>
                     <div class="col-md-6">
                         <span class="badge badge-primary m-1">Stars: ${repo.stargazers_count}</span>
-                        <span class="badge badge-secondary m-1">Watchers: ${repo.watchers}</span>
-                        <span class="badge badge-success m-1">Forks: ${repo.forks_count}</span>       
+                        <span class="badge badge-success m-1">Watchers: ${repo.watchers}</span>
+                        <span class="badge badge-info m-1">Forks: ${repo.forks_count}</span>       
                     </div>
                 </div>
                 </div>

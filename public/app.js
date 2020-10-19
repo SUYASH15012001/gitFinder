@@ -18,7 +18,6 @@ const searchUser = document.getElementById('searchUser');
                 ui.showProfile(data.profile); 
                 ui.showRepos(data.repos); 
             }
-            console.log(data);
         })
      }
      else {
